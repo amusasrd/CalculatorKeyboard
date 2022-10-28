@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="Calculator" customModuleProvider="target">
+            <connections>
+                <outlet property="display" destination="KXD-J1-u2w" id="aja-v0-Car"/>
+                <outlet property="nextKeyboardButton" destination="eNX-B4-OX6" id="4JN-s4-Kbl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTG-a3-5sX" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="282" y="8" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="+"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-1" eventType="touchUpInside" id="Cmj-cr-hh9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIV-hh-pMY" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="282" y="46" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="-"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-1" eventType="touchUpInside" id="pKk-ws-hpc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9Q-1E-jUr" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="244" y="8" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="9"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="GFp-DM-aFg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR3-kq-IZE" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="282" y="84" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="x"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-1" eventType="touchUpInside" id="xBO-kY-TaG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="120-Dr-rVF" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="282" y="122" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="%"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOperation:" destination="-1" eventType="touchUpInside" id="hMc-VZ-eXy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUa-YR-4bf" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="206" y="8" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="8"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="JAv-Au-txU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhQ-sv-5bQ" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="168" y="84" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="tbN-Rk-K0r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjc-IS-nti" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="206" y="84" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="0iM-DT-mfM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEN-5x-cQl" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="206" y="46" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="5"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="r6Z-2g-MII"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ur-ZI-YeJ" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="244" y="122" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="."/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapDot" destination="-1" eventType="touchUpInside" id="PL7-cT-jXW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-75-z3L" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="206" y="122" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="0"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="r8Q-Iu-doA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-Ou-PrX" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="244" y="84" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="3"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="gAP-9X-zRv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-wa-91J" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="244" y="46" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="6"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="LwL-37-K8a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMH-dy-Edj" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="168" y="122" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="C"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clearDisplay" destination="-1" eventType="touchUpInside" id="w7U-YZ-Yyi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scp-yA-cPS" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="168" y="8" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="7"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="Xpo-H4-cxS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6S-0R-DIU" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="168" y="46" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNumber:" destination="-1" eventType="touchUpInside" id="AZh-jA-im3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKB-3F-XAz" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="8" y="122" width="140" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="="/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="computeLastOperation" destination="-1" eventType="touchUpInside" id="bhW-EP-NPe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNX-B4-OX6" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="8" y="84" width="140" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="Next Keyboard"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-4A-47Z" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="8" y="46" width="140" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15342133620689655" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" title="Insert Text"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapInsert" destination="-1" eventType="touchUpInside" id="yoZ-5c-b6B"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXD-J1-u2w" customClass="RoundLabel" customModule="Calculator" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="140" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15740840517241381" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="1" alpha="0.89358836202068981" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.25661246543636229" blue="0.51834703194871801" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="386" y="322"/>
+        </view>
+    </objects>
+</document>
